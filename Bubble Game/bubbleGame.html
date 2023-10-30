@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Game</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    
+    <audio id="startingAudio" src="sounds/gameStart.mp3"></audio>
+    
+    <button id="goBackBtn" class="btn"><span>Go Back</span></button>
+
+
+    <div id="container">
+        <div id="main-panel">
+
+            <div id="top-panel">
+                <div class="panel-item">
+                    <h1>Hit</h1>
+                    <div id="hit" class="box">-</div>
+                </div>
+                <div class="panel-item">
+                    <h1>Timer</h1>
+                    <div id="timer" class="box">60</div>
+                </div>
+                <div class="panel-item">
+                    <h1>Score</h1>
+                    <div id="score" class="box">0</div>
+                </div>
+                <div class="panel-item">
+                    <h1>High Score</h1>
+                    <div id="highScore" class="box">0</div>
+                </div>
+            </div>
+            
+            <div id="bottom-panel">
+                
+                <h2>Click Here to start the game</h1>
+            
+            </div>
+        </div>
+
+        <button id="restartBtn" class="btn" onclick="restartGame()" disabled><span>Restart</span></button>
+
+    </div>
+
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>

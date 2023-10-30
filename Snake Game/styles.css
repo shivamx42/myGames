@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    
+}
+
+html,body{
+	
+	width: 100%;
+	height: 100%;
+	
+	background-color: #294a78f1;
+	background-color: rgba(96, 169, 135, 0.929);
+    font-family: 'Noto Sans TC', sans-serif;
+
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    overflow: auto;
+
+	
+}
+
+
+::-webkit-scrollbar {
+    
+    display: none;
+    
+}
+
+#goBackBtn{
+
+    animation: btnSlide 1.3s linear 0s forwards;
+
+}
+
+#goBackBtn:hover span{
+    display: none;
+}
+
+#goBackBtn:hover::after{
+    
+    font-size: large;
+    content: "\2190";
+    
+}
+
+@keyframes btnSlide {
+
+    0%{
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        cursor: pointer;
+        transform: translateX(0px);
+    }
+}
+
+
+
+.top-container{
+
+	display: flex;
+	flex-direction: column;
+	
+	
+}
+
+
+.canvas-container{
+
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+	animation: container-anim 1.3s linear 0s 1 normal forwards;
+
+
+}
+
+@keyframes container-anim {
+	from{
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+
+
+canvas{
+
+	border-radius: 5px;
+
+}
+
+
+
+
+
+.btn{
+    
+    opacity: 0;
+    
+    background-color: rgb(233, 187, 187);
+    background-color: rgba(254, 226, 230, 0.96);
+	
+	outline: none;
+
+    width: 75px;
+    height: 40px;
+
+    border-radius: 7px;
+    border: 2.5px solid black;
+    
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+    margin: 9px;
+    
+    
+}
+
+#restartBtn:hover span{
+    display: none;
+}
+
+#restartBtn:hover::after{
+    
+    font-size: large;
+    content: "\21BB";
+    
+}
+
+
+.to-show-btn{
+    
+    /* animation: showBtn 0.5s linear 0s forwards; */
+    /* animation: showText 0.5s linear 1.6s forwards; */
+    /* animation: panel-anim 0.8s linear forwards; */
+
+	opacity: 1;
+	cursor: pointer;
+
+    
+
+}
+
+@keyframes showBtn {
+
+    0%{
+        transform: translateY(-8px);
+    }
+
+    100%{
+
+        transform: translateY(0px);
+        opacity: 1;
+        cursor: pointer;
+        
+    }
+
+}
